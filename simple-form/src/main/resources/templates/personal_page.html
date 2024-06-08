@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/style2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600&display=swap"
+            rel="stylesheet"
+    />
+
+    <title>Personal page</title>
+</head>
+<body>
+<div class="navigation">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand icon">Magmal</a>
+            </div>
+            <h1>Welcome to the personal page <span th:text="${userLogin}"></span></h1>
+            <div class="nav justify-content-end">
+                <a href="#" class="icon">
+                    <img src="/img/navigation-icon.svg" alt="naviganion" />
+                </a>
+            </div>
+        </div>
+    </nav>
+</div>
+<img src="/img/man.jpg" class="img-responsive man" />
+<div class="hide-catalog">
+    <p class="catalog">КАТАЛОГ</p>
+</div>
+<div class="justify-content-center">
+    <div class="frame-all">
+        <ul>
+            <div class="time-line">
+                <div class="all">
+                    <li>Все</li>
+                </div>
+                <div class="time-year">
+                    <div class="time">
+                        <li>Лето</li>
+                    </div>
+                    <div class="time">
+                        <li>Осень/Зима</li>
+                    </div>
+                    <div class="time">
+                        <li>Весна</li>
+                    </div>
+                </div>
+            </div>
+        </ul>
+    </div>
+</div>
+<div class="bg-cards">
+    <table>
+        <tbody>
+        <tr>
+            <td>
+                <div class="card">
+                    <h2>Карточка 1</h2>
+                    <div class="card-img">
+                        <img  src="/img/14.jpg"
+                              style="
+                             height: 200px;
+                             width: 150px;">
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="card">
+                    <h2>Карточка 2</h2>
+                    <div class="card-img">
+                        <img src="/img/13.jpg"
+                             style="
+                             height: 200px;
+                             width: 150px;"
+                        >
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="card">
+                    <h2>Карточка 3</h2>
+                        <img src="/img/дождевик.jpeg"
+                             style="
+                             height: 200px;
+                             width: 150px;">
+
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="card">
+                    <h2>Карточка 4</h2>
+                    <div class="card-img">
+                        <img src="/img/Бисквит.jpeg"
+                             style="
+                             height: 200px;
+                             width: 150px;">
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="card">
+                    <h2>Карточка 5</h2>
+                    <div class="card-img">
+                        <img src="/img/Связанный свитер.jpg"
+                             style="
+                             height: 200px;
+                             width: 150px;">
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="card">
+                    <h2>Карточка 6</h2>
+                    <div class="card-img">
+                        <img src="/img/17.jpg"
+                             style="
+                             height: 200px;
+                             width: 150px;">
+                    </div>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="block-but">
+    <div id="cardContainer" class="card-container"></div>
+    <div class="justify-content-end">
+        <div class="buy-button">
+            <button class="button"><p>Загрузить ещё</p></button>
+        </div>
+    </div>
+</div>
+<!--<div class="opinions-block">-->
+<!--    <div class="review">-->
+<!--        <p class="text-review">ОТЗЫВЫ</p>-->
+<!--        <p>-->
+<!--            Благодарю консультантов отдела-->
+<!--            за их профессионализм и внимательность.-->
+<!--            Всё было превосходно! Лучший магазин!-->
+<!--        </p>-->
+<!--        <br />-->
+<!--        <p>-->
+<!--            Ткани замечательные. Модели современные и отличные лекала.-->
+<!--            Сидит одежда как на модели.-->
+<!--            Большая благодарность консультантам в магазине.-->
+<!--            С вниманием и любовью относятся к покупателям!-->
+<!--            Упаковка бережная в фирменные пакеты.-->
+<!--            В общем, я безмерно рада что у нас такой качественный-->
+<!--            отечественный бренд.-->
+<!--        </p>-->
+<!--        <br />-->
+<!--        <p>-->
+<!--            Приятные ткани, хорошая посадка, актуальные цвета.-->
+<!--            Большое спасибо Карине за помощь в подборе,-->
+<!--            рекомендацию комплектов, за вежливость, открытость-->
+<!--            и доброту. Я очень рада найти такую интересную марку-->
+<!--            и такое приятное грамотное отношение. Спасибо большое.-->
+<!--        </p>-->
+<!--    </div>-->
+<!--</div>-->
+</body>
+<!--<script src="/js/cards.js"></script>-->
+</html>

@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Alegreya|Arima+Madurai|Dancing+Script|Dosis|Merriweather|Oleo+Script|Overlock|PT+Serif|Pacifico|Playball|Playfair+Display|Share|Unica+One|Vibur");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffeac7;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    opacity: 0.95;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+form {
+    max-width: 100%;
+    width: 450px;
+    min-height: 500px;
+    height: auto;
+    border-radius: 5px;
+    margin: 2% auto;
+    box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+    padding: 2%;
+    background-image: linear-gradient(#fff5f5 50%, #fff5f5 50%);
+}
+
+form .con {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 350px;
+}
+
+header {
+    margin: 2% auto 10% auto;
+    text-align: center;
+}
+
+header h2 {
+    font-size: 250%;
+    font-family: "Poppins", sans-serif;
+    color: #f96d9a;
+}
+
+/* //////////////////////////////////////////// */
+/* //////////////////////////////////////////// */
+
+.input-item {
+    background: #fff;
+    color: #333;
+    padding: 14.5px 0px 15px 9px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+/* Show/hide password Font Icon */
+#eye {
+    background: #fff;
+    color: #333;
+
+    margin: 5.9px 0 0 0;
+    margin-left: -20px;
+    padding: 15px 9px 19px 0px;
+    border-radius: 0px 5px 5px 0px;
+
+    float: right;
+    position: relative;
+    right: 1%;
+    top: -0.2%;
+    z-index: 5;
+
+    cursor: pointer;
+}
+/* inputs form  */
+input[class="form-input"] {
+    width: 90%;
+    height: 50px;
+
+    margin-top: 2%;
+    padding: 15px;
+
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    color: #252537;
+
+    outline: none;
+    border: none;
+
+    border-radius: 0px 5px 5px 0px;
+    transition: 0.2s linear;
+}
+input[id="txt-input"] {
+    width: 250px;
+}
+/* focus  */
+input:focus {
+    transform: translateX(-2px);
+    border-radius: 5px;
+}
+
+/* //////////////////////////////////////////// */
+/* //////////////////////////////////////////// */
+
+/* input[type="text"] {min-width: 250px;} */
+/* buttons  */
+button {
+    display: inline-block;
+    color: #252537;
+    width: 45%; /* уменьшаем ширину кнопок */
+    height: 50px;
+    padding: 0 10px; /* уменьшаем отступы кнопок */
+    background: #f96d9a;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s linear;
+    margin: 3% auto; /* изменяем отступы кнопок и центрируем по горизонтали */
+    letter-spacing: 0.05em;
+}
+
+.log-in {
+    display: inline-block;
+    color: #252537;
+    width: 100%;
+    height: 50px;
+    padding: 0 10px;
+    background: #f96d9a;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s linear;
+    margin: 3% auto; /* изменено с 3% 2% */
+    letter-spacing: 0.05em;
+}
+
+/* Submits */
+.submits {
+    width: 48%;
+    display: inline-block;
+    margin-left: 2%;
+}
+
+/*       Forgot Password button FAF3DD  */
+.frgt-pass {
+    background: transparent;
+}
+
+/*     Sign Up button  */
+.sign-up {
+    background: #f96d9a;
+}
+
+/* buttons hover */
+button:hover {
+    transform: translatey(3px);
+    box-shadow: none;
+}
+
+/* buttons hover Animation */
+button:hover {
+    animation: ani9 0.4s ease-in-out infinite alternate;
+}
+@keyframes ani9 {
+    0% {
+        transform: translateY(3px);
+    }
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+.other {
+    text-align: center; /* выравниваем содержимое по центру */
+}
